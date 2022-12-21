@@ -15,12 +15,12 @@ app.use(bodyParser.json());
 
 const userRouter = require("./router/userRouter");
 const productRouter = require("./router/productRouter");
-const paymentRoute = require("./router/paymentRoute.js")
+// const paymentRoute = require("./router/paymentRoute.js")
 
 app.use(express.json());
 app.use(userRouter);
 app.use(productRouter);
-app.use(paymentRoute);
+// app.use(paymentRoute);
 
 app.listen(port,() => {
     console.log("this site port number "+port);
